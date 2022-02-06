@@ -1,0 +1,22 @@
+version: "3.9"
+services:
+  app:
+    build: .
+    depends_on:
+      - postgresql
+    environment:
+      - SPRING_DATASOURCE_URL
+      - SPRING_DATASOURCE_USERNAME
+      - SPRING_DATASOURCE_PASSWORD
+      - SPRING_JPA_GENERATE_DDL
+  postgresql:
+    image: bitnami/postgresql:11
+    volumes:
+      - postgresdb:/bitnami/postgresql
+    environment:
+      - POSTGRESQL_USERNAME
+      - POSTGRESQL_PASSWORD
+      - POSTGRESQL_DATABASE
+volumes:
+  postgresdb:
+    driver: local
