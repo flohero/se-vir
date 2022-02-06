@@ -1,0 +1,9 @@
+[submodule "unit4/continuousdelivery"]
+	path = unit4/continuousdelivery
+	url = https://github.com/MartinAhrer/continuousdelivery.git
+[submodule "unit6/continuousdelivery"]
+	path = unit6/continuousdelivery
+	url = https://github.com/MartinAhrer/continuousdelivery.git
+[submodule "unit7/continuousdelivery"]
+	path = unit7/continuousdelivery
+	url = https://github.com/MartinAhrer/continuousdelivery.git
