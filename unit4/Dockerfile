@@ -1,4 +1,4 @@
-FROM eclipse-temurin:latest AS build
+FROM eclipse-temurin:11 AS build
 COPY continuousdelivery /continuousdelivery
 WORKDIR /continuousdelivery
 RUN ./gradlew build
